@@ -44,9 +44,9 @@ console.log(`Összesen ennyi másodperc: ${ossz_masodperc}`);
 let nap = Number(prompt('Add meg a napok számát: '));
 let ora2 = Number(prompt('Add meg az órák számát: '));
 
-let honap = Math.floor(nap / 30);
+let honap_ora = ((nap-1)*24) + ora2
 
-console.log(`Ez ${honap} hónap és ${ora2} óra.`);
+console.log(`Ez a hónap ${honap_ora} órája.`); 
 
 // -------------------------------------------------------------
 let a = Number(prompt('Adj meg egy számot: '));
